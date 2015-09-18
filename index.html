@@ -3,11 +3,39 @@
     <head>
         <title>段下先生は神です</title>
         <link rel="icon" href="icon.jpg"/>
+        <meta name="keywords" value="danshita sensei"/>
     </head>
-    <body style="margin: 0; padding: 0; width: 75%; margin-left: 12%;background-color: black;">
+    <body style="margin: 0; padding: 0; width: 100%; margin-left: 0%;background-color: black;">
+        <embed src="background.wav" autostart=true width="1" height="1"/>
+        <div class="header"></div>
+        <h1 style="font-size: 8.2em;" id="colorchanger">SENSEI NOTICED US</h1>
+        <img src="senseitext.PNG" style="width: 33%"/>
+        <img src="senseitext.PNG" style="width: 33%"/>
+        <img src="senseitext.PNG" style="width: 33%"/>
+        <img src="senseitext.PNG" style="width: 33%"/>
+        <img src="senseitext.PNG" style="width: 33%"/>
+        <img src="senseitext.PNG" style="width: 33%"/>
+        <img src="celebration.gif" style="width: 33%;"/>
+        <img src="celebration2.gif" style="width: 33%;"/>
+        <img src="celebration3.gif" style="width: 33%;"/>
+        <img src="celebration4.gif" style="width: 49.7%;"/>
+        <img src="celebration5.gif" style="width: 49.7%;"/>
         <img src="icon.jpg" style="z-index: 1; width: 100%; margin: 0;"/>
-        <div style="width:100%; height: 30px; background-color: black; margin: 0; font-family: Calibri; color: white;">Kawaii Danshita</div>
         <img src="danshitakawaii.jpg" style="width: 100%; z-index: 0;"/>
         <img src="theylovepillows.jpg" style="width: 100%;"/>
+        <script>
+            var arr = ["white", "yellow", "green", "blue", "red"];
+            var v = 0;
+            window.onload = function(){
+                while(true){    
+                    setInterval(changecolor(v), 1000);
+                }
+            }
+            function changecolor(v){
+                document.getElementById("colorchanger").style.color = arr[v];
+                v++; 
+                v = v % 5;
+            }
+        </script>
     </body>
 </html>
