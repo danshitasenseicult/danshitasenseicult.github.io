@@ -8,7 +8,7 @@
     <body style="margin: 0; padding: 0; width: 100%; margin-left: 0%;background-color: black;">
         <embed src="background.wav" autostart=true width="1" height="1"/>
         <div class="header"></div>
-        <h1 style="font-size: 8.2em;" id="colorchanger">SENSEI NOTICED US</h1>
+        <h1 style="font-size: 8.2em;" id="colorchanger" style="color: white;">SENSEI NOTICED US</h1>
         <img src="senseitext.PNG" style="width: 33%"/>
         <img src="senseitext.PNG" style="width: 33%"/>
         <img src="senseitext.PNG" style="width: 33%"/>
@@ -23,19 +23,5 @@
         <img src="icon.jpg" style="z-index: 1; width: 100%; margin: 0;"/>
         <img src="danshitakawaii.jpg" style="width: 100%; z-index: 0;"/>
         <img src="theylovepillows.jpg" style="width: 100%;"/>
-        <script>
-            var arr = ["white", "yellow", "green", "blue", "red"];
-            var v = 0;
-            window.onload = function(){
-                while(true){    
-                    setInterval(changecolor(v), 1000);
-                }
-            }
-            function changecolor(v){
-                document.getElementById("colorchanger").style.color = arr[v];
-                v++; 
-                v = v % 5;
-            }
-        </script>
     </body>
 </html>
